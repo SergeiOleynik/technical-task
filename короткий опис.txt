@@ -11,3 +11,7 @@
   Q = I * (t*36 000) Ah                                            				   timeForConvert=(inputTime*36000)
   Wh = U * Q Wh 
   якщо напруга на батареї меньша ніж задане значення(для цього приклада constLowBattery	= 2.55), вимірювання припиняються
+
+  змінні для озрахунку: 
+  cnv.capacity = (cnv.current*timeForConvert) - розрахунок Q
+  cnv.energy = (cnv.voltage*cnv.capacity) - розрахунок Wh 
